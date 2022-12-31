@@ -13,10 +13,12 @@ export class MongoGetUsersRepository implements IUsersRepository{
     }
 }
 
+
+// configurando para usar MYSQL server
 export class MysqlGetUsersRepository implements IUsersRepository{
     async getUsers(): Promise<User[]> {
        return [{
-           firstName: 'Nicole',
+           firstName: 'Isabele',
            lastName: 'Valderez',
            email: 'val@gmail.com.br',
            pasword:"123",

@@ -11,10 +11,10 @@ const port = process.env.PORT || 9000;
 
 
 app.get("/client", async (req, res)=>{
-// const mongoGetUsersRepository = new MongoGetUsersRepository();
-const mysqlGetUsersRepository = new MysqlGetUsersRepository();
+const mongoGetUsersRepository = new MongoGetUsersRepository();
+// const mysqlGetUsersRepository = new MysqlGetUsersRepository();
 
-const getUsersController = new GetUsersController (mysqlGetUsersRepository);
+const getUsersController = new GetUsersController (mongoGetUsersRepository);
 
 const { body, statusCode } = await getUsersController.handle();
 
