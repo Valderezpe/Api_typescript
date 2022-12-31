@@ -1,6 +1,9 @@
 import { IUsersController, IUsersRepository } from "./protocols";
 
-export class UsersController implements IUsersController {
+export class GetUsersController implements GetUsersController {
+    static handle() {
+        throw new Error("Method not implemented.");
+    }
 constructor( private readonly UsersRepository: IUsersRepository){ }
      async handle(){
 
