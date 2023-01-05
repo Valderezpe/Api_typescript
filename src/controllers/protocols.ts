@@ -1,7 +1,7 @@
  export interface HttpResponse<T>{
     params?: any;
     statusCode?: number;
-    body: T  | string;
+    body: T;
 }
 
 export interface HttpRequest<B>{

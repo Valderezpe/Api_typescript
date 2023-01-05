@@ -28,7 +28,7 @@ const main = async() =>{
         
         const { body, statusCode } = await getUsersController.handle();
         
-         res.status(statusCode).send(body);
+         res.status(statusCode as any).send(body);
     });
 
     app.post("/client", async(req, res) =>{
