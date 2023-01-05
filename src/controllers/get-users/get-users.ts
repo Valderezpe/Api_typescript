@@ -1,6 +1,7 @@
-import { IUsersController, IUsersRepository } from "./protocols";
+import { IController } from "../protocols";
+import { IUsersRepository } from "./protocols";
 
-export class GetUsersController implements GetUsersController {
+export class GetUsersController implements IController {
     static handle() {
         throw new Error("Method not implemented.");
     }
